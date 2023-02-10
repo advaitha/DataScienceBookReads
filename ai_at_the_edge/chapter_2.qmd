@@ -1,0 +1,18 @@
+# Chapter 2
+## Edge AI in the real world
+
+### Common use cases for Edge AI
+* `Greenfield project` - Building the hardware and software from the ground up for a specific purpose.
+* `Brownfield project`- Using the existing hardware to bring new capabilities.
+
+* Preventing forest fires using power line fault detection - [Izoelektro's RAM-1](https://www.ram-center.com/#overlappable-1) device uses edge AI to solve the problem. 
+
+* Protecting firefigthers with intelligent wearables. [BioTrac Band](https://slatesafety.com/first-responders/) is a wearable device designed for workers, like firefighters who are exposed to extreme conditions.
+
+* [ElephantEdge](https://www.irnas.eu/elephantedge-tracker-breakdown-advanced-iot-animal-tracking-solutions/) is an open source project to create a tracking collar to help understand elephant behavior.
+
+### Types of applications
+* Keep track of objects
+* Understanding and controlling systems
+* Understanding people and living things
+
