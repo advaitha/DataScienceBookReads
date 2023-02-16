@@ -1,0 +1,134 @@
+# Writing for Data SCientists
+
+The key takeaway is that you should publish a few quality blogs before trying to monetize or get writing jobs.
+
+## How to write about Data Science
+* An article should offer a solution to the problem. It should focus on the unique way to minimize the pain point to the user
+* In case you are unsure, discuss the article with the editor
+* Write article in the active voice - Subject should be performing an action
+* Short paragraphs with 5-6 lines
+* Highlight important keywords
+* Include table of contents
+* Use heading and sub-headings
+* Second person vs. first person (not clear)
+* Use minimum number of words
+* Use meaningful description for cross-references
+* Avoid overused datasets
+* Beginners always look for articles that show full data science life cycle. 
+* If possible document how the dataset was collected
+* Publish a post after proofreading it
+* Technical terms should be spelled correctly - Python and not python
+* stick to one English version throughout the article
+* Ask for feedback before publishing
+* Do fact-checking
+* Aim for depth when explaining technical concepts
+* Provide link to the tools
+* Always use images with creative common license and always mention the source
+* Use visualization
+* Start with an outline
+* Research first
+
+
+## Why companies look for Data Science content creators
+* Create awareness for the company
+* Grow a community
+* Lead generation
+* Education
+Align your goals with the company goals when you are creating content for them.
+
+
+## How to deal rejection when you start writing
+* Evaluate why the rejection happened
+* Ask for feedback in case of a rejection
+* Don't take feedback personally
+* Get advice and feedback from other Datascience writers
+* Try self-publish
+* Be consistent and create writing samples
+
+
+## Finding and validating ideas
+* Keep a list of ideas to write
+* Look at other blogs for inspiration
+* Write on something which was not clear or missing in a blog post
+* Document a project you are working on
+* Use `google trends` 
+* Ultimate guides for new technology 
+* Share learnings from a data science event you attended
+* Summarize a data science book you have read
+* Developers love "from scratch" implementations
+
+
+## How to avoid plagiarism
+* Avoid self-plagiarism (signing a contract and using the content elsewhere)
+* Proper referencing
+* Make most of your content original
+* use open-source images
+* Free image sources - Unsplash, Pixabay. Reference the image source
+* Cite datasets
+* [Reference code](https://integrity.mit.edu/handbook/writing-code)
+
+
+## SEO for data science writers
+* Link to authentic websites
+* Link to other related blog posts
+* Use canonical URLs if reposting a blog on other sites. This is notifying search engines of the original posts.
+* Update articles to the latest version 
+
+## How to research data science articles
+* Newsletters
+* Scientific papers
+* Following experts on social media
+* Conferences and webinars
+* Podcasts
+* Talk to experts
+
+## Where to find writing jobs
+* Companies which pay for writing
+    * Heartbeat
+    * neptune.ai
+    * weights and biases
+    * real python
+    * paperspace
+    * Digital ocean
+    * AuthO
+    * NimbleBox
+* Google -  "data science publications that pay writers"   
+
+## Promoting your work
+* Hacker News - [Guidelines on how to do this](https://www.developermarkepear.com/blog/developer-marketing-hacker-news)
+* Reddit groups 
+    * datascience
+    * languageTechnology
+    * machinelearning
+    * computervision
+    * learnmachinelearning
+* syndicate the content with canonical urls on other platforms
+* linkedin groups
+* video tutorial for the same article and publish on youtube
+* Newsletters - Email data science newsletter curators and ask them to feature your post
+
+## Writing tools
+* Grammarly
+* Medium
+* Ghost
+* Ezgif and Tinywow - Create GIFs from videos
+* Ocoya - Scheduling posts on social media
+
+
+## Machine learning full time roles which involve writing
+    * Machine Learning Developer Advocate
+    * Machine Learning Educator
+    * Technical Documentation Manager
+    * Technical Writer
+    * Machine Learning Community Builder
+    * DevRel Manager
+    * Developer Evangelist
+    * Machine Learning Advocate Engineer
+    * Developer Advocate Engineer    
+* When applying for these roles - Send a list of articles along with their engagement numbers - Metrics on the posts
+
+## Other ways to monetize the content
+* Writing short ebooks and publishing them on sites like
+    * Leanpub
+    * Smashwords
+    * Gumroad
