@@ -1,0 +1,6 @@
+# Preface
+* Language can be transformed into networks and analyzed
+
+## NLP
+* Text can be used to extract relationships. Networks can be used to study those relationships
+
