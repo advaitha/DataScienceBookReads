@@ -2,6 +2,7 @@
 
 ## Decision drivers for data mesh
 `key Decision Drivers` are:-
+
 * Business need
 * socio-technically complex organization
 * Data Maturity 
@@ -26,7 +27,6 @@
     * Diagnostic - why it happened?
     * Predictive - what will happen?
     * Prescriptive - How to take advantage of what will happen?
-
 * A data mesh is for companies with a certain level of data maturity. 
 
 #### Engineering Maturity
@@ -54,21 +54,71 @@
 ## Alternatives to Data Mesh
 
 ### Enterprise data warehouse
+Suitable in the following cases:-
+* Most of the data sources are structured
+* Well known use cases and not likely to expand
+* You extract value by using BI or reporting
+* Small number of unchanging source systems
+* Central team has expertise in data warehousing
 
 ![](/Images/enterprise_data_architecture.png)
 
 
 ### Data lake
-
+Suitable in the following cases:-
+* Deal with big data
+* Structured, semi-structured, and unstructured data sources
+* Hard to foresee all the data use cases
+* Data sources owned by small number of teams
+* consumption patterns are not yet established
+![](/Images/data_lake.png)
 
 
 ### Data lakehouse
+Features of a lakehouse:-
+* ACID support
+* schema enforcement and governance
+* BI support on top of the same data source
 
+![](/Images/data_lakehouse.png)
 
+Suitable in the following cases:-
+* Deal with big data
+* Structured, semi-structured, and unstructured data sources
+* Hard to foresee all the data use cases
+* Data sources owned by small number of teams
+* consumption patterns are not yet established
 
+`The elements of a data mesh may be constructed with existing infrastructure`
 
 ### Data fabric
+This is a technology centric solution to data management.It provides a low-code or no-code platform to connect data sources with consumers alongside governance applied on top of it.
+
+![](/Images/data_fabric.png)
+
+Suitable in the following cases:-
+* You have structured, semi-structured, and unstructured data sources.
+* You are dealing with big data.
+* There are many data sources, and they are owned by many teams.
+* You are dealing with many different ways to consume the data.
 
 
+### Data Mesh Implementation Process
 
-###
+![Data Mesh Implementation Process](/Images/data_mesh_implementation.png)
+
+![Data Mesh enabling and platform team](/Images/role_of_enabling_team.png)
+
+![Data Mesh and Data Governance](/Images/data_governance.png)
+
+
+### Steps for creating a data mesh
+* Choosing a business goal and enable with data
+* Define the data products needed
+* Develop data product
+* Collect feedback about the platform and analyze shared needs
+* Establish common policies and improve governance
+* Develop the platform
+    * It should connect data products and data consumers
+    * Automating the implementation of governance policies
+
