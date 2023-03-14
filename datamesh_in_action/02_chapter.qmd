@@ -1,0 +1,74 @@
+# Is Data Mesh right for you?
+
+## Decision drivers for data mesh
+`key Decision Drivers` are:-
+* Business need
+* socio-technically complex organization
+* Data Maturity 
+* Engineering Maturity
+* A data mesh is for companies with complex domains
+* A data mesh is for companies with diverse data sources
+* Data Governance maturity - Easier to implement in companies with higher data governance maturity
+* Data mesh is easier to implement in companies in which software is developed in close cooperation with data experts
+* Data mesh is easier to implement in companies that are following a domain-driven design approach
+
+
+### Business drivers
+* Are we planning to be data driven?
+* A data mesh requires a business case and is useful when there are related complex needs
+
+### Organizational drivers
+* A data mesh is for socio-technically complex organization with complex data needs
+
+#### Data Maturity Model
+* Four stages of Data Maturity
+    * Descriptive - what happened?
+    * Diagnostic - why it happened?
+    * Predictive - what will happen?
+    * Prescriptive - How to take advantage of what will happen?
+
+* A data mesh is for companies with a certain level of data maturity. 
+
+#### Engineering Maturity
+* Level of test automation
+* DevOps and CI/CD culture
+* Level of embedding security into the development process
+* A data mesh is for companies with a high level of software engineering maturity
+
+### Domain-data drivers
+* A data mesh is for companies with complex domains
+* A data mesh is for companies with diverse data sources
+
+
+## Minor drivers
+
+### Data Governance Maturity Model
+* It divides governance maturity into six tiers:
+    * Unaware
+    * Aware
+    * Reactive
+    * Proactive
+    * Managed
+    * Efficient
+
+## Alternatives to Data Mesh
+
+### Enterprise data warehouse
+
+![](/Images/enterprise_data_architecture.png)
+
+
+### Data lake
+
+
+
+### Data lakehouse
+
+
+
+
+### Data fabric
+
+
+
+###

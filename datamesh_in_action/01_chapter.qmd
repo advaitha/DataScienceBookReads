@@ -1,0 +1,62 @@
+# Data Mesh in Action
+
+## The What and Why of the Data Mesh
+* Data Mesh is a decentralized paradigm. It decentralizes the ownership of data, its transformation into information and its serving.
+
+* Data Mesh is guided by four principles
+    * Domain ownership
+    * Domain data as a product
+    * Federated computational governance
+    * Self-serve data platform
+
+### Why Data Mesh
+* Centralized team creates an organizational bottleneck
+* Monolithic data storage creates a technological bottleneck
+* Data quality and data ownership are implicitly assigned which causes confusion
+
+
+### Domain-Oriented decentralized data ownership and architecture
+* Data and relevant components should be owned, maintained and developed by the people closest to it.
+* Data should have clear ownership and it should not be on the centralized level of an organization
+* Organizational structure resembles business domains
+
+### Data as a product
+* Data offered by a team should follow typical product features like:-
+    * Viable quality
+    * Anticipation of user needs
+    * Secured availability
+    * Focus on user goals
+    * Findable
+    * Interoperable - Different data products should be combinable in a way that increases their value
+
+ * Data product owner should deliver a data product addressing the business problem based on predefined success criteria   
+
+
+ ### Federated computational governance
+* Federate and automate data governance across all participants of the data mesh
+
+
+### Self-serve data infrastructure as a platform
+* Efforts that are duplicated throughout the company to a larger extent can be packaged into a platform
+* Data can be accessed through a self-serve data infrastructure
+* Data can be accessed through a self-serve data infrastructure
+* Features that can be supported by the platform are:-
+    * Governability
+    * Security
+    * Flexibility, adaptability and elasticity
+    * Resilience 
+    * Process automation
+
+### Socio-Technical Architecture
+* `conway's law` - Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.
+* Data Mesh is both technical and organisational solution
+
+## Data Mesh Challenges
+* Availability of tooling for data domain teams and central platform data team
+* Impact on cost 
+* Redundancy in the data 
+* Cross-domain analytics is difficult
+* Co-ordinated efforts from multiple engaged parties
+* Going from data as a by-product to data as a produt is a substantial cultural shift
+
+
