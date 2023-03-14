@@ -1,0 +1,22 @@
+# Kickstart your data Mesh MVP in a month
+
+* A mesh is a graph consisting of nodes and edges
+
+## Steps to start and deliver a data mesh MVP
+
+* Prepare a System landscape diagram
+* Stake holder mapping - Attitude, Power, Interest
+* Choosing development teams
+* Choosing a data governance team
+* Setting up MVP Governance
+* Developing minimal data products
+    * Identifying domain-oriented datasets
+    * Choose data product owners
+    * Decide on the minimum viable data product description
+    * Developing the simplest tools to expose your data
+    * Setting up the minimal platform
+    * Ensuring platform security
+
+
+![stakeholder mapping and management](/Images/stake_holder_types.png)
+
