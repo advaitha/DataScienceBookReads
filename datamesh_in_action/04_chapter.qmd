@@ -1,0 +1,9 @@
+# Domain Ownership
+
+* Domain is an area of interest or an area over which a person has control.
+
+* Domain Driven Design (DDD) is a software design approach that emphasizes common models and language between business and development teams.
+
+* `Domain Storytelling` method can be used to find about the domain and its purpose. The philosophy underlying domain storytelling is that people naturally like to tell stories and that stories will drive our understanding of things, concepts or processes.
+
+* Other domain capturing techniques are `rich pictures` and `event storming`.

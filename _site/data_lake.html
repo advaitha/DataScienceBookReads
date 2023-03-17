@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DataScienceBookReads – data_lake</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DataScienceBookReads</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#from-data-lake-to-data-swamp-why-it-happens-and-how-to-prevent-it" id="toc-from-data-lake-to-data-swamp-why-it-happens-and-how-to-prevent-it" class="nav-link active" data-scroll-target="#from-data-lake-to-data-swamp-why-it-happens-and-how-to-prevent-it">From Data Lake to Data Swamp: Why It Happens and How to Prevent It</a>
+  <ul class="collapse">
+  <li><a href="#benefits-of-a-data-lake" id="toc-benefits-of-a-data-lake" class="nav-link" data-scroll-target="#benefits-of-a-data-lake">Benefits of a Data Lake</a></li>
+  <li><a href="#why-do-data-lakes-become-data-swamps" id="toc-why-do-data-lakes-become-data-swamps" class="nav-link" data-scroll-target="#why-do-data-lakes-become-data-swamps">Why do data lakes become data swamps?</a></li>
+  <li><a href="#how-to-prevent-a-data-lake-from-becoming-a-data-swamp" id="toc-how-to-prevent-a-data-lake-from-becoming-a-data-swamp" class="nav-link" data-scroll-target="#how-to-prevent-a-data-lake-from-becoming-a-data-swamp">How to prevent a data lake from becoming a data swamp?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="from-data-lake-to-data-swamp-why-it-happens-and-how-to-prevent-it" class="level1">
+<h1>From Data Lake to Data Swamp: Why It Happens and How to Prevent It</h1>
+<p>Data lakes are powerful tools for storing, managing and analyzing vast amounts of data from a variety of sources. They promise to provide businesses with invaluable insights that can help drive growth and innovation. However, like any powerful tool, data lakes can also pose significant risks if not managed properly. Without careful planning and management, a data lake can quickly become a <strong>“data swamp,”</strong> filled with <code>irrelevant, low-quality, and outdated data that can harm business operations and hinder decision-making</code>. In this blog post, we will explore the common causes of data swamps in data lakes and provide practical tips and best practices to help you avoid the risks and ensure your data lake remains a valuable asset for your organization.</p>
+<p>Before discussing data swamps, let’s take a look at what are the benefits of a data lake.</p>
+<section id="benefits-of-a-data-lake" class="level2">
+<h2 class="anchored" data-anchor-id="benefits-of-a-data-lake">Benefits of a Data Lake</h2>
+<p>There are several benefits to using a data lake, including:</p>
+<p><strong>Centralized data storage</strong>: Data lakes provide a centralized location for storing all data, making it easier to access and analyze.</p>
+<p><strong>Scalability</strong>: Data lakes can store and process petabytes of data, making them ideal for businesses that generate large amounts of data.</p>
+<p><strong>Flexibility</strong>: Data lakes can store structured, semi-structured, and unstructured data, allowing businesses to store and analyze data from a variety of sources.</p>
+<p><strong>Cost-effectiveness</strong>: Data lakes are typically more cost-effective, as they typically store raw data in object stores like s3 or blob storage.</p>
+<p><strong>Improved data analysis</strong>: Data lakes enable businesses to apply a wide range of analytics techniques to their data, including machine learning, artificial intelligence, and natural language processing. This enables businesses to gain insights and make more informed decisions.</p>
+<p>Overall, data lakes provide businesses with a powerful tool for storing, processing, and analyzing large amounts of data, enabling better decision-making and business outcomes.</p>
+</section>
+<section id="why-do-data-lakes-become-data-swamps" class="level2">
+<h2 class="anchored" data-anchor-id="why-do-data-lakes-become-data-swamps">Why do data lakes become data swamps?</h2>
+<p>Data lakes are like Gardens. What makes a Garden either attractive or unattractive to us?</p>
+<p>A garden is a thing of beauty, a place to escape the hustle and bustle of everyday life and connect with nature. However, just like any other beautiful thing, a garden requires constant maintenance to keep it looking its best. Without regular care, a garden can quickly become overgrown, unkempt, and unsightly. Weeds will sprout up where they’re not wanted, flowers will wither and die, and before long, the once-beautiful garden will be unrecognizable. But with a little bit of attention and care, a garden can thrive, with vibrant flowers, lush greenery, and a peaceful ambience that can soothe the soul. Data lakes need care and maintenance just like a beautiful garden.</p>
+<p>Here are some reasons why a data lake becomes a data swamp:-</p>
+<ul>
+<li><p><strong>Lack of data governance</strong>: Without proper data governance policies and procedures, a data lake can become cluttered with irrelevant or inaccurate data, making it difficult to find and use the data that is needed.</p></li>
+<li><p><strong>Poor data quality</strong>: If data is ingested into the data lake without being properly validated or cleaned, it can lead to poor data quality.</p></li>
+<li><p><strong>Lack of metadata management</strong>: Metadata is data that describes the data, and it is essential for understanding and using the data in the data lake. Without proper metadata management, it can be difficult to understand what data is stored in the data lake and how it should be used.</p></li>
+<li><p><strong>Lack of data access controls</strong>: If the data lake is not properly secured, unauthorized users may be able to access and modify data, which can lead to inaccurate or irrelevant data being stored in the data lake.</p></li>
+<li><p><strong>Lack of privacy controls</strong>: If Personally Identifiable Information (PII) data is not handled properly, it can lead to data leakage and loss of user privacy. This can severely damage the reputation of the organization.</p></li>
+</ul>
+</section>
+<section id="how-to-prevent-a-data-lake-from-becoming-a-data-swamp" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-prevent-a-data-lake-from-becoming-a-data-swamp">How to prevent a data lake from becoming a data swamp?</h2>
+<p>Simply put, taking regular care and maintenance can be a great way to prevent a data lake from becoming a data swamp.</p>
+<p>Here are some ways to maintain a data lake:-</p>
+<ul>
+<li><code>Establishing proper data governance policies</code> to ensure that data is properly managed throughout its lifecycle.</li>
+<li><code>Ensure data quality</code> during the processing of the raw data. Take necessary action to ensure raw data is clean.</li>
+<li><code>Implement Metadata management and data discovery</code>, your users should be able to find the required data in the data lake and also know how it was generated and what various attributes mean.</li>
+<li><code>Ensure data access controls</code>, such that only authorized users can access and modify the data.</li>
+<li><code>Ensure user privacy is protected</code>, never store PII data in the data lake. Ensure PII data is either masked or any appropriate privacy controls are in place. If there is no business case for using PII data then better not to store it in the first place.</li>
+</ul>
+<p>These are easier said than done. It needs a lot of time, effort and coordination with different teams to ensure data lakes are crystal clear and beneficial to the organisation.</p>
+<p>Data lakes are not the only solution to handle large amounts of an organisation’s data. <code>There are other alternatives to data lakes like Enterprise Data Warehouse, Data Mart, Data Virtualization, Data Fabric, Data Hub and Data Mesh. Every organization should evaluate the requirements, strengths and weaknesses of each framework and choose the best solution. Let us discuss these frameworks in some of our future blog posts</code>.</p>
+<p>To Summarize, data lakes are capable to handle a variety of data sources in huge volumes. They are flexible and scalable. When they are planned, built and maintained properly, they can be very beneficial for any organization. If not they will become data swamps. A few ways to prevent a data lake from becoming a data swamp are ensuring data quality, governance, metadata management, data discovery, data access control, and protecting user privacy.</p>
+<p>Hope you learned something about data lakes today and let us meet in our next blog post.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
